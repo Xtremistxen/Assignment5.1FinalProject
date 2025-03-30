@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can you get down with Strings?</title>
+    <script src="Strings.js"></script>
+    <link rel="stylesheet" href="Mainstrings.css">
+    <!-- Robert Montgomery-->
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Meme.html">Meme</a></li>
+            <li><a href="RPSLOTR.html">Game</a></li>
+            <li><a href="Skynetstrings.html">User Input/Validation</a></li>
+            <li><a href="Pianobasshall.html">Add sounds</a></li>
+            <li><a href="Moving.html">Moving Image</a></li>
+            <li><a href="Objectives.html">Objectives</a></li>
+            <li><a href="Animewatchlist.html">Table</a></li>
+        </ul>
+    </nav>
+
+
+    <br>
+    <br>
+    <h1>Enter a response below get a Concatenated string</h1> <!--The user can enter two different inputs if they but in ABC and the DEF the result will be ABCDEF-->
+    <form id="stringInput1" onsubmit="concatenateStrings(); return false;">
+        string 1: <input type="text" id="firstString"/>
+        <br>
+        string 2: <input type="text" id="secondString"/>
+        <input type="submit"/>
+    </form>
+    <p id="updates">Update here</p>
+
+    <h1>Enter a response below and get length of concatenated string</h1> <!--The user can put any input in and it will give the length of the word or words example Apple = 5 length-->
+    <form id="stringInput2" onsubmit="concatenateLength(); return false;">
+        string 3: <input type="text" id="thirdString"/>
+        <br>
+        string 4: <input type="text" id="fourthString"/>
+        <input type="submit"/>
+    </form>
+    <p id="update1">Update here</p>
+
+    <h1>Enter a response below and get subString of (1,3)</h1> <!--The user can put in a word and it will remove the first and third letter example Soccer = ocer -->
+    <form id="stringInput3" onsubmit="substringStrings(); return false;">
+        string 5: <input type="text" id="fifthString"/>
+        <br>
+        string 6: <input type="text" id="sixthString"/>
+        <input type="submit"/>
+    </form>
+    <p id="update2">Update here</p>
+
+    <h1>Enter a response below removes all vowels and replaced with 1</h1> <!-- Since computers are taking over this will replace all vowels and replace them with 1-->
+    <form id="stringInput4" onsubmit="replaceVowels(); return false;">
+        string 7: <input type="text" id="seventhString"/>
+        <br>
+        string 8: <input type="text" id="eigthString"/>
+        <input type="submit"/>
+    </form>
+    <p id="update3">Update here</p>
+
+    <h1>Enter a response below and see if it's a palindrome</h1> <!-- This will help a user understand what a palindrome is such as Rabbit is not a palindrome but Mom is since it can be spelt backwards and be the same-->
+    <form id="stringInput5" onsubmit="checkPalindrome(); return false;">
+        string 9: <input type="text" id="ninthString"/>
+        <input type="submit"/>
+    </form>
+    <p id="update4">Update here</p>
+</body>
+</html>

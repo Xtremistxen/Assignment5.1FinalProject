@@ -1,0 +1,74 @@
+body
+{
+  background-image: radial-gradient(black, red);
+}
+
+p
+{
+    background-color: rgb(167, 129, 129);
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: black; 
+}
+
+ul
+{
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+button
+{
+ background-color: chocolate;
+ border-color: crimson;
+ border-radius: 50px;
+ border-style: ridge;
+ width: 150px;
+ height: 150px;
+ cursor: hand;
+}
+
+nav 
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 10px 0;
+    z-index: 1000; 
+}
+
+.menu 
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li 
+{
+    margin: 0 20px;
+}
+
+.menu a 
+{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover 
+{
+    color: #ff00ff; 
+    transform: scale(1.1); 
+}

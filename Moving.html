@@ -1,0 +1,51 @@
+<!--
+Author: Robert Montgomery
+Assignment: Moving Meme Image with Start/Stop Buttons
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <link rel="stylesheet" href="Mainmove.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Meme.html">Meme</a></li>
+            <li><a href="RPSLOTR.html">Game</a></li>
+            <li><a href="Strings.html">Palindrome</a></li>
+            <li><a href="Skynetstrings.html">User Input/Validation</a></li>
+            <li><a href="Pianobasshall.html">Add sounds</a></li>
+            <li><a href="Objectives.html">Objectives</a></li>
+            <li><a href="Animewatchlist.html">Table</a></li>
+        </ul>
+    </nav>
+    <!-- Aduio container for game music-->
+    <h1>Welcome to the very first game pong</h1>
+    <div id="audio-container">
+        <div>
+            <h3>Game Music</h3>
+            <button id="play" onclick="play(game)">Play</button>
+            <button id="stop" onclick="stop(game)" disabled>Stop</button>
+        </div>
+    
+    <!-- Buttons to start and stop image movement -->
+     <h3>Press start to play</h3>
+    <button id="startButton" onclick="startMovement()">Start</button>
+    <button id="stopButton" onclick="stopMovement()" disabled>Stop</button>
+    <div class="container">
+    <!-- pong image to move around the page and the paddles will move up and down -->
+    <img id="pong" src="Images/pong.jpg">
+    <img id="paddle1" src="Images/Paddle.jpg">
+    <img id="paddle2" src="Images/Paddle.jpg">
+
+    <div id="status"></div>
+    </div>
+
+    <script src="Moveimg.js"></script>
+
+</body>
+</html>

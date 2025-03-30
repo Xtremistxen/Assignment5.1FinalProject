@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play the Piano at the bass hall</title>
+    <link rel="stylesheet" href="Mainpiano.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="RPSLOTR.html">Game</a></li>
+            <li><a href="Strings.html">Palindrome</a></li>
+            <li><a href="Skynetstrings.html">User Input/Validation</a></li>
+            <li><a href="Moving.html">Moving Image</a></li>
+            <li><a href="Objectives.html">Objectives</a></li>
+            <li><a href="Animewatchlist.html">Table</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Added three sample music for the user to listen too-->
+    <h1> Welcome to the Basshall</h1>
+    <div id="audio-container">
+        <h2>Sample Music</h2>
+        <div>
+            <h3>Sad Piano</h3>
+            <button id="play" onclick="play(mySad)">Play</button>
+            <button id="stop" onclick="stop(mySad)" disabled>Stop</button>
+        </div>
+        <div>
+            <h3>Emotional Piano</h3>
+            <button id="play1" onclick="play(myEmotional)">Play</button>
+            <button id="stop1" onclick="stop(myEmotional)" disabled>Stop</button>
+        </div>
+        <div>
+            <h3>Relaxing Piano</h3>
+            <button id="play2" onclick="play(myRelaxing)">Play</button>
+            <button id="stop2" onclick="stop(myRelaxing)" disabled>Stop</button>
+        </div>
+    </div>
+    
+    
+
+
+    <div class="piano"> <!-- Downloaded my sound from freesound.org-->
+        <!-- This was a doozy typing out, I started with the first white and black notes and copy pasted 88 times then had to look up each note -->
+        <div class="key white" onclick="playNote('A0')"></div> 
+        <div class="key black" onclick="playNote('As0')"></div> <!--Fixed the issue with the black keys not working Before it was A#0 with a # as the flat but removed the "#" replaced with "s" and it worked-->
+        <div class="key white" onclick="playNote('B0')"></div>
+        <div class="key white" onclick="playNote('C1')"></div>
+        <div class="key black1" onclick="playNote('Cs1')"></div><!--Had to number by black keys from 0-35 so I could manually move each key in my CSS-->
+        <div class="key white" onclick="playNote('D1')"></div>
+        <div class="key black2" onclick="playNote('Ds1')"></div>
+        <div class="key white" onclick="playNote('E1')"></div>
+        <div class="key white" onclick="playNote('F1')"></div>
+        <div class="key black3" onclick="playNote('Fs1')"></div>
+        <div class="key white" onclick="playNote('G1')"></div>
+        <div class="key black4" onclick="playNote('Gs1')"></div>
+        <div class="key white" onclick="playNote('A1')"></div>
+        <div class="key black5" onclick="playNote('As1')"></div>
+        <div class="key white" onclick="playNote('B1')"></div>
+        <div class="key white" onclick="playNote('C2')"></div>
+        <div class="key black6" onclick="playNote('Cs2')"></div>
+        <div class="key white" onclick="playNote('D2')"></div>
+        <div class="key black7" onclick="playNote('Ds2')"></div>
+        <div class="key white" onclick="playNote('E2')"></div>
+        <div class="key white" onclick="playNote('F2')"></div>
+        <div class="key black8" onclick="playNote('Fs2')"></div>
+        <div class="key white" onclick="playNote('G2')"></div>
+        <div class="key black9" onclick="playNote('Gs2')"></div>
+        <div class="key white" onclick="playNote('A2')"></div>
+        <div class="key black10" onclick="playNote('As2')"></div>
+        <div class="key white" onclick="playNote('B2')"></div>
+        <div class="key white" onclick="playNote('C3')"></div>
+        <div class="key black11" onclick="playNote('Cs3')"></div>
+        <div class="key white" onclick="playNote('D3')"></div>
+        <div class="key black12" onclick="playNote('Ds3')"></div>
+        <div class="key white" onclick="playNote('E3')"></div>
+        <div class="key white" onclick="playNote('F3')"></div>
+        <div class="key black13" onclick="playNote('Fs3')"></div>
+        <div class="key white" onclick="playNote('G3')"></div>
+        <div class="key black14" onclick="playNote('Gs3')"></div>
+        <div class="key white" onclick="playNote('A3')"></div>
+        <div class="key black15" onclick="playNote('As3')"></div>
+        <div class="key white" onclick="playNote('B3')"></div>
+        <div class="key white" onclick="playNote('C4')"></div>
+        <div class="key black16" onclick="playNote('Cs4')"></div>
+        <div class="key white" onclick="playNote('D4')"></div>
+        <div class="key black17" onclick="playNote('Ds4')"></div>
+        <div class="key white" onclick="playNote('E4')"></div>
+        <div class="key white" onclick="playNote('F4')"></div>
+        <div class="key black18" onclick="playNote('Fs4')"></div>
+        <div class="key white" onclick="playNote('G4')"></div>
+        <div class="key black19" onclick="playNote('Gs4')"></div>
+        <div class="key white" onclick="playNote('A4')"></div>
+        <div class="key black20" onclick="playNote('As4')"></div>
+        <div class="key white" onclick="playNote('B4')"></div>
+        <div class="key white" onclick="playNote('C5')"></div>
+        <div class="key black21" onclick="playNote('Cs5')"></div>
+        <div class="key white" onclick="playNote('D5')"></div>
+        <div class="key black22" onclick="playNote('Ds5')"></div>
+        <div class="key white" onclick="playNote('E5')"></div>
+        <div class="key white" onclick="playNote('F5')"></div>
+        <div class="key black23" onclick="playNote('Fs5')"></div>
+        <div class="key white" onclick="playNote('G5')"></div>
+        <div class="key black24" onclick="playNote('Gs5')"></div>
+        <div class="key white" onclick="playNote('A5')"></div>
+        <div class="key black25" onclick="playNote('As5')"></div>
+        <div class="key white" onclick="playNote('B5')"></div>
+        <div class="key white" onclick="playNote('C6')"></div>
+        <div class="key black26" onclick="playNote('Cs6')"></div>
+        <div class="key white" onclick="playNote('D6')"></div>
+        <div class="key black27" onclick="playNote('Ds6')"></div>
+        <div class="key white" onclick="playNote('E6')"></div>
+        <div class="key white" onclick="playNote('F6')"></div>
+        <div class="key black28" onclick="playNote('Fs6')"></div>
+        <div class="key white" onclick="playNote('G6')"></div>
+        <div class="key black29" onclick="playNote('Gs6')"></div>
+        <div class="key white" onclick="playNote('A6')"></div>
+        <div class="key black30" onclick="playNote('As6')"></div>
+        <div class="key white" onclick="playNote('B6')"></div>
+        <div class="key white" onclick="playNote('C7')"></div>
+        <div class="key black31" onclick="playNote('Cs7')"></div>
+        <div class="key white" onclick="playNote('D7')"></div>
+        <div class="key black32" onclick="playNote('Ds7')"></div>
+        <div class="key white" onclick="playNote('E7')"></div>
+        <div class="key white" onclick="playNote('F7')"></div>
+        <div class="key black33" onclick="playNote('Fs7')"></div>
+        <div class="key white" onclick="playNote('G7')"></div>
+        <div class="key black34" onclick="playNote('Gs7')"></div>
+        <div class="key white" onclick="playNote('A7')"></div>
+        <div class="key black35" onclick="playNote('As7')"></div>
+        <div class="key white" onclick="playNote('B7')"></div>
+        <div class="key white" onclick="playNote('C8')"></div>
+    </div>
+
+    <script src="Notes.js"></script>
+</body>
+</html>

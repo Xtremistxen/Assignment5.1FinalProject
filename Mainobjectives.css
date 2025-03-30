@@ -1,0 +1,98 @@
+body
+{   /* This is how you create different back grounds */
+ /* background-color: darkslateblue; */
+/* background-image: linear-gradient(purple, green); */
+  background-image: radial-gradient(cyan, pink); 
+   
+ /* You can have a image as your background or repeated ect.. */
+  /* background-image: url("meme.jpg"); */
+    /* background-repeat: repeat-x; */
+   /* background-repeat: no-repeat; */
+    
+}
+
+nav 
+{
+    position: fixed;
+    top: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 10px 0;
+    z-index: 1000; 
+}
+
+.menu 
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu li 
+{
+    margin: 0 20px;
+}
+
+.menu a 
+{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover 
+{
+    color: #ff00ff; 
+    transform: scale(1.1); 
+}
+
+/* This will allow us to change our paragragh font, size and styles ect.. */
+p
+{
+ background-color: darkgray;
+ text-align: center;
+ font-size: 20px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-style: italic;
+ font-weight: bold;
+ color: black;
+}
+
+/* Here we can decorate our H1-h6, change color aswell */
+h1
+{
+ text-decoration: wavy;
+ text-decoration-color:green;
+}
+
+/*we can add some magic to our button with a background colors and fonts. */
+button
+{
+ background-color: chocolate;
+ border-color: crimson;
+ border-radius: 100px;
+ border-style: ridge;
+ width: 150px;
+ height: 150px;
+ cursor: crosshair;
+}
+
+/* We can create an ID for button and have to be different and not the same */
+#firstbutton:hover
+{
+ background-color: green;
+ padding: 20px 40px;
+ transition-duration: .6s;
+ color: deeppink;
+}
+
+#secondbutton:hover
+{
+ background-color: red;
+ padding: 1000px 5000px;
+ transition: .5000s;
+ color:red
+}

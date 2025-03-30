@@ -1,0 +1,59 @@
+<!-- Created by [Robert Montgomery] This page validates user inputs and displays a secret message if the inputs are correct.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Skynet</title>
+    <link rel="stylesheet" href="Mainskynet.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Meme.html">Meme</a></li>
+            <li><a href="RPSLOTR.html">Game</a></li>
+            <li><a href="Strings.html">Palindrome</a></li>
+            <li><a href="Pianobasshall.html">Add sounds</a></li>
+            <li><a href="Moving.html">Moving Image</a></li>
+            <li><a href="Objectives.html">Objectives</a></li>
+            <li><a href="Animewatchlist.html">Table</a></li>
+        </ul>
+    </nav>
+    <h1>Please enter your user information</h1>
+    <div class="form-container">
+        <!-- This form will collect user data such as First, Last and zipcode -->
+        <form id="userForm">
+            <!-- The user will need to enter their first name -->
+            <label for="firstName">First Name:</label>
+            <br>
+            <input type="text" id="firstName" name="firstName" required>
+            <br>
+
+            <!-- The user will need to enter their last name -->
+            <label for="lastName">Last Name:</label>
+            <br>
+            <input type="text" id="lastName" name="lastName" required>
+            <br>
+
+            <!-- The user will need to enter their zipcode -->
+            <label for="zipCode">Zip Code:</label>
+            <br>
+            <input type="text" id="zipCode" name="zipCode" required>
+            <br>
+
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- This will display the seceret message from the resistance -->
+        <div id="messageArea"></div>
+    </div>
+
+    <script src="Skynet.js"></script> 
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Add and Remove Buttons</title>
+    <link rel="stylesheet" href="Mainanime.css">
+</head>
+<body>
+    <nav>
+    <ul class="menu">
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="Meme.html">Meme</a></li>
+    <li><a href="RPSLOTR.html">Game</a></li>
+    <li><a href="Strings.html">Palindrome</a></li>
+    <li><a href="Skynetstrings.html">User Input/Validation</a></li>
+    <li><a href="Pianobasshall.html">Add sounds</a></li>
+    <li><a href="Moving.html">Moving Image</a></li>
+    <li><a href="Objectives.html">Objectives</a></li>
+</ul>
+</nav>
+     
+<p>This custom Table will allow you to add/remove anime that you are currently watching. 
+Simply click Add Anime, and enter the Name, what episode you are currently on, 
+a link to the anime site and have you completed the anime yes or no. 
+And dont worry your Anime watch list will save to your Browsers local storage to ensure your data stays safe just dont clear this sites data.</p>
+
+
+    <h1>Add to your Anime watchlist</h1>
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Anime Name</th>
+                <th>Episode #</th>
+                <th>Link to Anime</th>
+                <th>Completed yes/no</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- The Table rows will spawn here -->
+        </tbody>
+    </table>
+    <button id="addRowButton">Add Anime</button>
+    
+    <script src="Anime.js"></script>
+</body>
+</html>
